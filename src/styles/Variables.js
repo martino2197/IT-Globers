@@ -11,7 +11,7 @@ export const spacing = {
   space2: '1.2em',
   space3: '2.5em',
   space4: '5em',
-  spaceCard: '1.8em',
+  spaceCard: '2em',
   spaceCardTitle: '0.8em'
 }
 
