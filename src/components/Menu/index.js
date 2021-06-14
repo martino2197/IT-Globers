@@ -7,13 +7,13 @@ import { Card } from '../Card'
 import { Section, MenuContainer } from './styles'
 
 
-export const Menu = ({ data }) => {
+export const Menu = ({ data, setSelected }) => {
     return(
         <Section>
-         <h1>Selecciona tu Aerolinea</h1>
+         <h1>Selecciona tu Aerolínea</h1>
             <MenuContainer>
                 <ul>
-                    {data ? data.map((airline) => <li key={airline.id}><Card airline={airline} /></li>) : (<p>Lo sentimos, no har aerolineas disponibles</p>)}
+                    {data ? data.map((airline) => <li key={airline.id}><Card airline={airline} setSelected={setSelected}/></li>) : (<p>Lo sentimos, no har aerolineas disponibles</p>)}
                 </ul>
             </MenuContainer>
         </Section>

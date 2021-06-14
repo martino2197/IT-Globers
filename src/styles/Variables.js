@@ -2,6 +2,7 @@
 export const colors = {
   headerColor: '#480095',
   mainBackgroundColor: '#ffffff', // white
+  gradient: "linear-gradient(90deg, rgb(255, 148, 63) 0%, rgb(255, 148, 63) 26%, rgb(250, 32, 128) 61%, rgb(173, 26, 199) 100%);"
 }
 
 // ------------------------------------ SPACING ------------------------------------//

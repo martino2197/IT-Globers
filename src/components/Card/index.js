@@ -2,9 +2,9 @@ import React from 'react';
 
 import { Container, CardContainer, Image } from './styles'
 
-export const Card = ({ airline }) => {
+export const Card = ({ airline, setSelected }) => {
     return (
-        <Container>
+        <Container onClick={() => setSelected(airline.name)}>
         <CardContainer>
           <Image src={airline.image} alt='' />
           <div>
