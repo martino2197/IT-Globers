@@ -85,26 +85,3 @@ export const Button = styled.button`
       z-index: 5;
     `};
 `
-
-export const GoogleButton = styled.button`
-  color: ${colors.primaryColor};
-  border: 1px solid ${colors.primaryColor};
-  border-radius: ${border.borderRadiusButton};
-  font-weight: ${fonts.bold};
-  cursor: pointer;
-  outline: none;
-  transition: 0.3s;
-  width: 343px;
-  height: 54px;
-  margin: ${spacing.space2} 0;
-`
-
-export const LocationButton = styled.button`
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  z-index: 10;
-  align-self: center;
-  padding: 0px;
-  margin-bottom: 100px;
-`

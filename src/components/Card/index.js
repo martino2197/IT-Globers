@@ -10,7 +10,7 @@ export const Card = ({ airline, setSelected }) => {
           <div>
             <h1>{airline.name}</h1>
           </div>
-          <p>Esta es la card de prueba para esto jsjsjsjs</p>
+          <p>{airline.country}</p>
         </CardContainer>
       </Container>
     )

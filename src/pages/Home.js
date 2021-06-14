@@ -35,7 +35,6 @@ export const Home = () => {
         email.setValue('')
         phoneNumber.setValue('')
         age.setValue('')
-        console.log('useEffect')
     }, [selected])
 
     return (

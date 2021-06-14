@@ -31,19 +31,3 @@ export const InputText = styled.input`
     font-weight: ${fonts.normal};
   }
 `
-
-export const InputDate = styled.input`
-  width: 60%;
-  margin-top: ${spacing.space2};
-  padding: ${spacing.space1} ${spacing.space3};
-  border-radius: ${border.borderRadiusSmall};
-  box-shadow: ${shadows.outsideShadow};
-  border: ${border.border};
-  background: ${colors.secondaryBackgroundColor};
-  outline: none;
-  transition: 0.3s;
-
-  &:focus {
-    box-shadow: ${shadows.innerShadow};
-  }
-`

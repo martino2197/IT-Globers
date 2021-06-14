@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 
-import { colors } from '../../styles/Variables'
 import { media } from '../../styles/MediaQueries';
 
 export const Section = styled.section`

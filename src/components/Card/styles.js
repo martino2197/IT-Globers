@@ -19,7 +19,6 @@ export const CardContainer = styled.div`
     flex-direction: column;
     background-color: ${colors.primaryBackgroundColor};
     border-radius: ${border.borderCard};
-    /* margin-top: ${spacing.spaceCard}; */
     position: relative;
     font-family: ${fonts.family}, ${fonts.familySecondary};
     box-shadow: ${shadows.cardShadow};
@@ -29,32 +28,27 @@ export const CardContainer = styled.div`
         display: flex;
         justify-content: space-between;
         margin: 0px ${spacing.spaceCardTitle};
-        /* transform: translateY(10%);
-        position: absolute; */
     }
     & div span {
         display: flex;
         justify-content: center;
         align-items: center;
         font-size: ${fonts.small};
-        /* color: yellow; */
-        /* transform: translateY(10%);
-        position: absolute; */
     }
     & div h1{
-        /* font-family: ${fonts.family}, ${fonts.familySecondary}; */
         font-size: ${fonts.h2};
         white-space: nowrap;
         text-overflow: ellipsis;
         overflow: hidden;
+        ${media.tablet} {
+            margin: 0px;
+        }
     }
     & p {
         font-size: ${fonts.small};
         font-weight: ${fonts.normal};
         text-align: justify;
         margin: 0px ${spacing.space2};
-        /* transform: translateY(10%);
-        position: absolute; */
     }
 `
 
