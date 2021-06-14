@@ -4,25 +4,26 @@ import { colors, border } from '../../styles/Variables'
 
 export const SectionForm = styled.section`
     width: 100%;
-    height: 400px;
+    height: 600px;
+    margin: 3em 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: ${colors.headerColor};
     & h2 {
         margin: 1em;
+        text-align: center;
         color: ${colors.mainBackgroundColor};
     }
 `
 
 export const FormUser = styled.form`
     width: 600px;
-    height: 300px;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: ${colors.headerColor};
-    border: ${border.border};
+    border-radius: ${border.borderRadiusForm};
 `

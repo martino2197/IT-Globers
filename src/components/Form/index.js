@@ -1,11 +1,17 @@
 import React from 'react';
 
+//styles
 import { SectionForm, FormUser } from './styles'
 
+//Globals Styles
 import { InputText } from '../../styles/Inputs'
 import { Button } from '../../styles/Buttons'
 
+// SweetAler2
+import Swal from 'sweetalert2'
+
 export const Form = ({ selected, setSelected, user, onSubmit }) => {
+
     const handleSumbit = (e) => {
         e.preventDefault()
         onSubmit({
@@ -15,6 +21,14 @@ export const Form = ({ selected, setSelected, user, onSubmit }) => {
           age: user.age.value,
           airline: selected
         })
+         
+        Swal.fire({
+            position: 'top-end',
+            icon: 'success',
+            title: 'Tu información fue enviada con éxito, estaremos en contacto contigo',
+            showConfirmButton: false,
+            timer: 5000
+        })
         setSelected(null)
       }
 
@@ -23,8 +37,8 @@ export const Form = ({ selected, setSelected, user, onSubmit }) => {
         <SectionForm>
             {selected ? (
                 <>
-                    <h2>Hola, bienvenido, sabemos que quieres viajar en {selected}, por favor diligencia el siguiente formulario:</h2>
                     <FormUser onSubmit={handleSumbit}>
+                        <h2>Hola, bienvenido, sabemos que quieres viajar en {selected}, por favor diligencia el siguiente formulario:</h2>
                         <InputText 
                             type='text'
                             name='name'
@@ -74,8 +88,8 @@ export const Form = ({ selected, setSelected, user, onSubmit }) => {
                     </FormUser>
                 </>) : 
                 (<>
-                    <h2>Selecciona una Aerolínea</h2>
                     <FormUser onSubmit={handleSumbit}>
+                        <h2>Selecciona una Aerolínea</h2>
                         <InputText 
                             type='text'
                             name='name'
@@ -126,7 +140,6 @@ export const Form = ({ selected, setSelected, user, onSubmit }) => {
                         <Button disabled>Enviar</Button>
                     </FormUser>
                 </>)}
-
         </SectionForm>
     )
 }

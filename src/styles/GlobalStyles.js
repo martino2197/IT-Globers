@@ -10,7 +10,6 @@ html {
   /* font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,  'Helvetica Neue', sans-serif; */
   font-family: ${fonts.family};
   }
-  
   *, *::before, *::after {
   box-sizing: inherit;
   }
@@ -18,6 +17,14 @@ html {
   ul, li, h1, h2, h3, p, button {
     margin: 0;
     ${'' /* padding: 0; */}
+  }
+
+  h1, h2 {
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 300;
+    color: ${colors.headerColor};
+    
   }
 
   ul {

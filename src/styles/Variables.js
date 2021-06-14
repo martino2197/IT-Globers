@@ -18,7 +18,7 @@ export const spacing = {
 
 // ------------------------------------ FONTS ------------------------------------//
 export const fonts = {
-  family: "'Roboto', sans-serif",
+  family: "Roboto",
   familySecondary: 'Roboto',
   normal: '500',
   bold: '700',
@@ -37,7 +37,8 @@ export const border = {
   borderRadiusSmall: '5px',
   borderRadiusBig: '10px',
   borderCard: '10px',
-  borderRadiusButton: '100px'
+  borderRadiusButton: '100px',
+  borderRadiusForm: '25px'
 }
 
 // ------------------------------------ SHADOWS ------------------------------------//
