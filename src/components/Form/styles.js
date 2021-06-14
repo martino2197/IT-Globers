@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 import { colors, border } from '../../styles/Variables'
+import { media } from '../../styles/MediaQueries'
 
 export const SectionForm = styled.section`
     width: 100%;
@@ -26,4 +27,7 @@ export const FormUser = styled.form`
     justify-content: center;
     background-color: ${colors.headerColor};
     border-radius: ${border.borderRadiusForm};
+    ${media.tablet} {
+            width: 100%;
+        }
 `

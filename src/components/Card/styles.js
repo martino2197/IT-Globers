@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { media } from '../../styles/MediaQueries'
 import { colors, fonts, spacing, border, shadows } from '../../styles/Variables'
 
 export const Container = styled.div`
@@ -6,6 +7,9 @@ export const Container = styled.div`
     height: 180px;
     position: relative;
     margin: ${spacing.spaceCard};
+    ${media.tablet} {
+        margin: 0px;
+    }
 `
 
 export const CardContainer = styled.div`
