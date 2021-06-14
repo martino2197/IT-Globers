@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 //components
 import { Card } from '../Card'
@@ -7,13 +7,17 @@ import { Card } from '../Card'
 import { Section, MenuContainer } from './styles'
 
 
-export const Menu = ({ data, setSelected }) => {
+export const Menu = ({ data, setSelected, currentList }) => {
     return(
         <Section>
          <h1>Selecciona una Aerolínea</h1>
             <MenuContainer>
                 <ul>
-                    {data ? data.map((airline) => <li key={airline.id}><Card airline={airline} setSelected={setSelected}/></li>) : (<p>Lo sentimos, no har aerolineas disponibles</p>)}
+                    {currentList ? (<>
+                        {data ? data.map((airline) => <li key={airline.id}><Card airline={airline} setSelected={setSelected} currentList={currentList} /></li>) : (<p>Lo sentimos, no har aerolineas disponibles</p>)}
+                    </>) : (<>
+                        {data ? data.map((airline) => <li key={airline.id}><Card airline={airline} setSelected={setSelected} currentList={currentList} /></li>) : (<p>Lo sentimos, no har aerolineas disponibles</p>)}
+                    </>)}
                 </ul>
             </MenuContainer>
         </Section>

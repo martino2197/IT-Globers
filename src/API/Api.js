@@ -3,7 +3,7 @@ export const Api = [
     ,
     {"id":"2","name":"Interjet","country":"México","active":"N","image":"https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Logo_Interjet_transparent.svg/800px-Logo_Interjet_transparent.svg.png"}
     ,
-    {"id":"3","name":"Volaris","country":"México","active":"Y","image":"https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Volaris_logo.svg/768px-Volaris_logo.svg.png"}
+    {"id":"3","name":"Volaris","country":"México","active":"Y","image":"https://www.nyse.com/publicdocs/nyse/events/images/VLRS_web_1920.png"}
     ,
     {"id":"4","name":"VivaAerobus","country":"México","active":"N","image":"https://www.sebogo.mx/images/airlines/ori/VB.png"}
     ,

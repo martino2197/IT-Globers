@@ -18,6 +18,7 @@ export const CardContainer = styled.div`
     display: flex;
     flex-direction: column;
     background-color: ${colors.primaryBackgroundColor};
+    /* background-color: red; */
     border-radius: ${border.borderCard};
     position: relative;
     font-family: ${fonts.family}, ${fonts.familySecondary};
@@ -49,6 +50,11 @@ export const CardContainer = styled.div`
         font-weight: ${fonts.normal};
         text-align: justify;
         margin: 0px ${spacing.space2};
+    }
+
+    &.active {
+        background-color: ${colors.selectedColor};
+        color: ${colors.mainBackgroundColor};
     }
 `
 

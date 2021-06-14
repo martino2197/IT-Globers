@@ -18,6 +18,7 @@ const onSubmitUser = (data) => {
 
 export const Home = () => {
     const [selected, setSelected] = useState(null)
+    const [currentList, setCurrentList] = useState(null)
     const name = useInputValue('')
     const email = useInputValue('')
     const phoneNumber = useInputValue('')
@@ -35,12 +36,13 @@ export const Home = () => {
         email.setValue('')
         phoneNumber.setValue('')
         age.setValue('')
+        setCurrentList(selected)
     }, [selected])
 
     return (
         <>
             <Header/>
-            <Menu data={Api} setSelected={setSelected} />
+            <Menu data={Api} setSelected={setSelected} currentList={currentList} />
             <Form selected={selected} setSelected={setSelected} user={user} onSubmit={onSubmitUser}/>
         </>
     )

@@ -21,7 +21,7 @@ export const Form = ({ selected, setSelected, user, onSubmit }) => {
           age: user.age.value,
           airline: selected
         })
-         
+        
         Swal.fire({
             position: 'top-end',
             icon: 'success',
@@ -38,7 +38,7 @@ export const Form = ({ selected, setSelected, user, onSubmit }) => {
             {selected ? (
                 <>
                     <FormUser onSubmit={handleSumbit}>
-                        <h2>Hola, bienvenido, sabemos que quieres viajar en {selected}, por favor diligencia el siguiente formulario:</h2>
+                        <h2>Hola, bienvenido, sabemos que quieres viajar en {selected.name}, por favor diligencia el siguiente formulario:</h2>
                         <InputText 
                             type='text'
                             name='name'
